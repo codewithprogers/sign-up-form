@@ -22,15 +22,14 @@
 }
 
 .right-col-form {
-  background-color: lightgray;
+  background-color: gray;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .signup-wrapper {
-  background-color: white;
-  padding: 40px 40px;
+  padding: 40px;
 }
 
 .form-card {
@@ -38,7 +37,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   column-gap: 6em;
-  border: none;
+  padding: 20px;
+  background-color: lightgray;
+  border: 1px solid black;
 }
 
 .form-row {
@@ -47,6 +48,10 @@
 }
 
 .promotion {
+  padding: 0 40px;
+}
+
+.create-account {
   padding: 0 40px;
 }
 
