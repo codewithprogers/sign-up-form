@@ -6,7 +6,7 @@
 
 .signup-page {
   display: grid;
-  grid-template-columns: 0.7fr 1.5fr;
+  grid-template-columns: 0.75fr 1.5fr;
 }
 
 .left-col-image {
@@ -22,7 +22,7 @@
 }
 
 .right-col-form {
-  background-color: #2a3e5b;
+  background-color: whitesmoke;
   font-family: "Inter", "Arial", sans-serif;
   min-height: 100vh;
   display: flex;
@@ -44,7 +44,7 @@ button,
 }
 
 .promotion {
-  color: white;
+  color: black;
   font-size: 3rem;
   font-weight: bolder;
   line-height: 1;
@@ -52,7 +52,7 @@ button,
 }
 
 .create-account {
-  color: white;
+  color: black;
 }
 
 .signup-wrapper {
@@ -65,8 +65,8 @@ button,
   gap: 1rem;
   column-gap: 2rem;
   padding: 1.875rem;
-  background-color: #324d6d;
-  border: 1px solid #bfcfe1;
+  background-color: whitesmoke;
+  border: 1px solid black;
   border-radius: 1.25rem;
   width: 80%;
 }
@@ -74,30 +74,48 @@ button,
 .form-row {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: whitesmoke;
 }
 
 legend {
-  color: white;
+  color: black;
   font-size: 1rem;
   font-weight: bold;
 }
 
 fieldset label {
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-bottom: 0.3125rem;
+  font-weight: bold;
+  color: black;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="password"] {
-  border: 0.5px solid white;
+  border: 1px solid black;
   border-radius: 10px;
   height: 3rem;
-  background-color: white;
+  background-color: whitesmoke;
   padding: 0.5em;
   font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #7fff4f;
+  box-shadow: 0px 0px 0px 2px darkgreen;
+  outline: none;
+}
+
+input[type="text"]:user-invalid:not(:focus):not(:placeholder-shown),
+input[type="email"]:user-invalid:not(:focus):not(:placeholder-shown),
+input[type="password"]:user-invalid:not(:focus):not(:placeholder-shown) {
+  border: 2px solid #ff5f6d;
+  box-shadow: 0px 0px 2px 2px #a0505c;
 }
 
 input[type="checkbox"] {
@@ -106,15 +124,16 @@ input[type="checkbox"] {
   width: 1.5em;
   height: 1.5em;
   vertical-align: -5px;
-  background-color: white;
+  background-color: whitesmoke;
+  border: 1px solid black;
   color: black;
 }
 
 input[type="checkbox"]::before {
   content: "✓";
   position: absolute;
-  left: 0.15em;
-  bottom: 0.009em;
+  left: 0.09em;
+  top: -0.09em;
   font-size: 1.3em;
   font-weight: bold;
   visibility: hidden;
@@ -131,7 +150,7 @@ input[type="checkbox"]:disabled {
 }
 
 .i-agree {
-  color: white;
+  color: black;
   padding-bottom: 1.25rem;
   font-size: 0.9rem;
 }
@@ -142,8 +161,8 @@ input[type="checkbox"]:disabled {
 
 button {
   padding: 0.9em 2.6em;
-  background-color: white;
-  border: none;
+  background-color: whitesmoke;
+  border: 1px solid black;
   border-radius: 15px;
   font-size: 1.1rem;
   font-weight: bold;
@@ -151,7 +170,21 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: whitesmoke;
+}
+
+button:active {
+  background-color: lightgray;
+}
+
 .log-in {
   padding-top: 1.25rem;
-  color: white;
+  color: black;
+}
+
+.i-agree a,
+.log-in a {
+  text-decoration: none;
+  color: #7ebbed;
 }
