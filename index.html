@@ -11,68 +11,82 @@
     />
   </head>
   <body>
-    <div class="signup-page">
+    <main class="signup-page">
       <div class="left-col-image">
         <img src="images/pexels-nobleseed-32919789.jpg" alt="" />
       </div>
 
       <div class="right-col-form">
-        <p class="promotion">
-          Sign up now to get notified about our latest drops and get 10% off of
-          you next purchase.
-        </p>
-        <h2 class="create-account">Create your account</h2>
-
-        <div class="form-section">
-          <form action="" class="signup-container">
-            <div class="signup-wrapper">
-              <fieldset class="form-card">
-                <legend>Account details</legend>
-                <div class="form-row">
-                  <label for="first-name">First name</label>
-                  <input
-                    type="text"
-                    id="first-name"
-                    name="first-name"
-                    required
-                  />
-                </div>
-                <div class="form-row">
-                  <label for="last-name">Last name</label>
-                  <input type="text" id="last-name" name="last-name" required />
-                </div>
-                <div class="form-row">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" />
-                </div>
-                <div class="form-row">
-                  <label for="number">Phone number</label>
-                  <input type="tel" id="number" name="phone-number" />
-                </div>
-                <div class="form-row">
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    required
-                  />
-                </div>
-                <div class="form-row">
-                  <label for="confirm-pw">Confirm password</label>
-                  <input
-                    type="password"
-                    id="confirm-pw"
-                    name="confirm-password"
-                    required
-                  />
-                </div>
-              </fieldset>
-            </div>
-            <button>Create account</button>
-          </form>
+        <div class="right-content">
+          <div class="top-content">
+            <p class="promotion">Get 10% off of your next purchase.</p>
+          </div>
+          <div class="form-section">
+            <h2 class="create-account">Create your account</h2>
+            <form action="" class="signup-container">
+              <div class="signup-wrapper">
+                <fieldset class="form-card">
+                  <legend>Account details</legend>
+                  <div class="form-row">
+                    <label for="first-name">First name</label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-row">
+                    <label for="last-name">Last name</label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                  </div>
+                  <div class="form-row">
+                    <label for="number">Phone number</label>
+                    <input type="tel" id="number" name="phone-number" />
+                  </div>
+                  <div class="form-row">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      required
+                    />
+                  </div>
+                  <div class="form-row">
+                    <label for="confirm-pw">Confirm password</label>
+                    <input
+                      type="password"
+                      id="confirm-pw"
+                      name="confirm-password"
+                      required
+                    />
+                  </div>
+                </fieldset>
+              </div>
+              <div class="i-agree">
+                <input type="checkbox" id="agree" name="i-agree" />
+                <label for="agree"
+                  >I agree to the Terms and Privacy Policy.</label
+                >
+              </div>
+              <button>Create account</button>
+              <div class="log-in">
+                <p>Already have an account? Log in</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
