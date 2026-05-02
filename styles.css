@@ -6,11 +6,12 @@
 
 .signup-page {
   display: grid;
-  grid-template-columns: 0.75fr 1.5fr;
+  grid-template-columns: 1fr;
 }
 
 .left-col-image {
-  height: 100vh;
+  height: 35vh;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -24,18 +25,14 @@
 .right-col-form {
   background-color: whitesmoke;
   font-family: "Inter", "Arial", sans-serif;
-  min-height: 100vh;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.promotion,
-.create-account,
-.form-card,
-.i-agree,
-button,
-.log-in {
-  margin-left: 3.75rem;
+.right-content {
+  width: min(90%, 700px);
 }
 
 .top-content {
@@ -45,7 +42,7 @@ button,
 
 .promotion {
   color: black;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: bolder;
   line-height: 1;
   width: 70%;
@@ -61,14 +58,14 @@ button,
 
 .form-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   column-gap: 2rem;
   padding: 1.875rem;
   background-color: whitesmoke;
   border: 1px solid black;
   border-radius: 1.25rem;
-  width: 80%;
+  width: 100%;
 }
 
 .form-row {
@@ -106,16 +103,16 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="password"]:focus {
-  border: 2px solid #7fff4f;
-  box-shadow: 0px 0px 0px 2px darkgreen;
+  border: 1.5px solid #7fff4f;
+  box-shadow: 0px 0px 0px 1.5px #2d4124;
   outline: none;
 }
 
 input[type="text"]:user-invalid:not(:focus):not(:placeholder-shown),
 input[type="email"]:user-invalid:not(:focus):not(:placeholder-shown),
 input[type="password"]:user-invalid:not(:focus):not(:placeholder-shown) {
-  border: 2px solid #ff5f6d;
-  box-shadow: 0px 0px 2px 2px #a0505c;
+  border: 1.5px solid #ff5f6d;
+  box-shadow: 0px 0px 0px 1.5px #332421;
 }
 
 input[type="checkbox"] {
@@ -160,7 +157,8 @@ input[type="checkbox"]:disabled {
 }
 
 button {
-  padding: 0.9em 2.6em;
+  padding: 0.8em 2em;
+  width: min(80%, 250px);
   background-color: whitesmoke;
   border: 1px solid black;
   border-radius: 15px;
@@ -187,4 +185,20 @@ button:active {
 .log-in a {
   text-decoration: none;
   color: #7ebbed;
+}
+
+@media screen and (min-width: 900px) {
+  .signup-page {
+    grid-template-columns: 0.75fr 1.25fr;
+  }
+  .left-col-image {
+    height: 100vh;
+    width: 100%;
+  }
+  .right-col-form {
+    min-height: 100vh;
+  }
+  .form-card {
+    grid-template-columns: 1fr 1fr;
+  }
 }
